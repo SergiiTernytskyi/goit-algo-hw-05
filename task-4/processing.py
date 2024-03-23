@@ -23,7 +23,7 @@ def get_all_contacts(contacts):
 
 @input_error 
 def get_contact(args, contacts):    
-    name, *_ = args        
+    name = args[0]        
     return f"{Fore.GREEN}Phone number for {name} is {contacts[name]}{Fore.RESET}"
 
 
