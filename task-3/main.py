@@ -35,7 +35,7 @@ def main():
             filtered_logs = filter_logs_by_level(logs, level)
             print(f'Details of logs for level "{level.upper()}":')
             for log_item in filtered_logs:
-                print(f'{log_item['date']} {log_item['time']} - {log_item['log_message']}')
+                print(f"{log_item['date']} {log_item['time']} - {log_item['log_message']}")
 
     except ValueError:
         print(f"Oops! Looks like empty command field. Try again...")
